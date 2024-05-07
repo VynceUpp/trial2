@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SecureTradeKenya</title>
+
+    <!-- linktags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+
+     <!-- start of header -->
+     <div class="header">
+        <div class="logo">
+            <h2>Secure<span>Trade</span></h2>
+        </div>
+        <!-- navbar -->
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html" class="navitems">Home</a></li>
+                <li><a href="about.html" class="navitems">About</a></li>
+                <li><a href="contact.html" class="navitems">Contact</a></li>
+                <li><a href="help.html" class="navitems">Help</a></li>
+                <li><a href="login.html" class="navitems">Sign In</a></li>
+                <p>SecureTrade Kenya &copy;2024</p>
+            </ul>
+        </div>
+        <!-- menu for mobile -->
+        <div class="navbarmobile">
+            <i class="ri-menu-line"></i>
+        </div> 
+    </div>
+    <!-- end of header -->
+
+    <main>
+        <div class="signup">
+            <h2>Login</h2>
+            <form class="form" id="login-form" onsubmit="confirmLogin()">
+                <div class="textbox">
+                    <input type="text" id="username" name="username" required>
+                    <label>Username</label>
+                    <span class="material-symbols-outlined"><i class="ri-mail-line"></i></span>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="passwordField" name="passwordField" required>
+                    <label>Password</label>
+                    <span class="material-symbols-outlined"><i class="ri-key-line"></i></span>
+                </div>
+                <a id="showPasswordButton" onclick="togglePasswordVisibility()">Show Password</a>
+                <p>Already have an account? <a href="signup.html">Sign Up here</a></p>
+                <button type="submit" class="loginbtn">Login
+                    <span class="material-symbols-outlined"><i class="ri-arrow-right-line"></i></span>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="../js/index.js"></script>
+    
+</body>
+</html>

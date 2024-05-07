@@ -1,0 +1,13 @@
+.about-section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 2;
+}

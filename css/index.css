@@ -1,0 +1,195 @@
+/* main */
+
+main {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    padding: 10px;
+}
+
+.introinfo {
+    text-align: center;
+    padding: 20px;
+}
+
+.introinfo h3 {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.introinfo p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.introinfo h5 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+form {
+    padding: 10px;
+}
+
+form p {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.input-group {
+    padding: 5px 10px;
+}
+
+.input-group > label {
+    font-size: 14px;
+}
+
+.input-group > select,
+.input-group > input {
+    background: #e5e5e556;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff !important;
+}
+
+.input-group > input::placeholder {
+    color: #d4d4d4 !important;
+}
+
+.start-transaction button {
+    margin: 10px;
+    background: rgba(137, 43, 226, 0.76);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-transaction button:hover {
+    background: blueviolet;
+}
+
+.moreinfo {
+    padding: 10px;
+}
+
+.moreinfo h3 {
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: blueviolet;
+}
+
+.moreinfo h5 {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    flex-basis: 1;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-box .card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 2px 2px #000000;
+}
+
+.card h4 {
+    color: blueviolet;
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.howitworks {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.howitworks h3.title {
+    text-align: center;
+    color: blueviolet;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.stepcard-box {
+    padding: 30px;
+    display: flex;
+    flex-basis: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stepcard {
+    margin: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 2px 0 2px #000000;
+
+}
+
+.stepcard h3 {
+    margin-top: -40px;
+    background: rgba(137, 43, 226, 0.39);
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 2px 1px #000000;
+    overflow-x: hidden;
+}
+
+.stepcard p {
+    font-size: 12px;
+    color: #e5e5e5;
+}
+
+.start-transaction1 button {
+    margin: 10px;
+    background: rgba(137, 43, 226, 0.76);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.start-transaction1 button:hover {
+    background: blueviolet;
+}

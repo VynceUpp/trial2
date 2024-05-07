@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color1: #80a2ff;
+    --color2: #8083ff;
+    --color3: #9d80ff;
+    --color4: #bd80ff;
+    --color5: #dd80ff;
+}
+
+body {
+    background: url(../assets/091.jpg);
+    color: #e5e5e5;
+    margin-top: 80px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #00000060;
+    backdrop-filter: blur(2px);
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo h2 > span {
+    color: blueviolet;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.navbar li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.navbar li:nth-child(5) {
+    background: blueviolet;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.navbar li:nth-child(5):hover {
+    color: #fff;
+    background: rgba(137, 43, 226, 0.637);
+}
+
+.navbarmobile {
+    background: #00000031;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding:2px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbarmobile:hover {
+    background: blueviolet;
+    color: #fff;
+}
+
+.navbarmobile.open i::before {
+    content:'\f00d';
+}
+
+.navbar.show {
+    display: block;
+}
+
+footer {
+    background: transparent;
+    padding-top: 68px;
+}
+
+section.top > h3 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+section.top > h3 >img {
+    height: 50px;
+} 
+
+footer section {
+    position: relative;
+    margin: 0 30px;
+}
+
+section.top {
+    display: grid;
+    border-bottom: 2px solid rgb(255, 255, 255, 20%);
+    padding-bottom: 20px;
+}
+
+section.top .links {
+    display: grid;
+    grid-template-columns: repeat( 1, 1fr);
+    gap: 30px;
+    margin-bottom: 36px;
+}
+
+section.top .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+}
+
+section.top h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section.top p {
+    margin: 0;
+}
+
+section.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+}
+
+section.top .socials > a {
+    margin-top: 20px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.356);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+a,
+.legal > a {
+    margin: 0 0 0 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.legal, .copyright {
+    font-size: 12px;
+    color: #fff;
+}
+
+.legal > span {
+    margin-right: 10px;
+}
+
+@media (width > 581px) {
+    .navbarmobile {
+        display: none;
+    }
+
+    .navbar p{
+        display: none;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    main .intro {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+@media (width < 580px) {
+    .navbar {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000e5; 
+        backdrop-filter:  blur(4px);
+        z-index: 999; 
+        overflow-y: auto;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        color: #fff;
+    }
+    
+    .navbar.show {
+        transform: translateX(0%);
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar ul li {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .navbar ul li:hover {
+        background: blueviolet;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    .navbar p {
+        margin-top: 90%;
+        font-size: 12px;
+    }
+    
+}
